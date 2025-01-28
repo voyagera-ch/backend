@@ -1,0 +1,10 @@
+version: "2"
+sql:
+  - engine: "postgresql"
+    queries: "query.sql"
+    schema: "schema.sql"
+    gen:
+      go:
+        package: "voyageraDB"
+        out: "../voyageraDB"
+        sql_package: "pgx/v5"
